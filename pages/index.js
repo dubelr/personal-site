@@ -83,7 +83,7 @@ export default function Home() {
             ))}
           </Wrap>
           <Text align="left">
-            Hi! {"I'm"} Robert, a full-time engineer co-op at
+            Hi! {"I'm"} Rob, a full-time engineer co-op at
             Plainspoken Digital (political discourse analysis startup) and a Junior at
             Northeastern University.
           </Text>
