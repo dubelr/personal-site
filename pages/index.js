@@ -12,14 +12,15 @@ import {
 } from "@chakra-ui/react";
 import Head from "next/head";
 import {HiDocumentText, HiMail, } from "react-icons/hi";
-import { GrLinkedin, GrGithub } from "react-icons/gr";
+import { GrLinkedinOption, GrGithub } from "react-icons/gr";
+
 export default function Home() {
-  let name = "Bobby Dubel";
+  let name = "Robert Dubel";
   let buttons = [
-    { text: "Resume", icon: HiDocumentText, path:"resume" },
+    { text: "Resume", icon: HiDocumentText, path:"resume.pdf" },
     { text: "Email", icon: HiMail, path:"mailto:dubel.r@notheastern.edu" },
-    { text: "@robert-dubel", icon: GrLinkedin, path:"https://www.linkedin.com/in/bobby-dubel-5b1b3b1b9/" },
-    { text: "@bobby-dubel", icon: GrGithub, path:"github.com/bobbydubel" },
+    { text: "@robert-dubel", icon: GrLinkedinOption, path:"https://www.linkedin.com/in/robert-dubel/" },
+    { text: "@bobby-dubel", icon: GrGithub, path:"https://github.com/bobby-dubel" },
   ]
   return (
     <div>
@@ -28,7 +29,7 @@ export default function Home() {
         <meta name="description" content="Robert Dubel's personal website" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Center pt="75px" px="50px">
+      <Center pt="150px" px="25px">
         <Flex w="620px" direction="column">
             <HStack spacing={4}>
               <Avatar size="xl" src="/profile.jpg" />
@@ -37,7 +38,7 @@ export default function Home() {
                 <Text>Software Engineer, Student. He/Him</Text>
               </VStack>
             </HStack>
-            <Wrap spacing={5} pt={5}>
+            <Wrap spacing={2} pt={5}>
               {buttons.map((button) => (
                 <Button 
                 variant="outline"
