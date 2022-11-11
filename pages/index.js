@@ -50,7 +50,7 @@ export default function Home() {
         <meta name="description" content="Robert Dubel's personal website" />
         <link rel="icon" href="/favicon.png" />
       </Head>
-      <Flex align="center" direction="column" h="100vh" w="100vw" py="75px" px="25px">
+      <Flex align="center" direction="column" h="100vh" w="100vw" py="5vh" px="25px">
         <Flex maxW="555px" direction="column">
           <HStack spacing={4}>
             <Avatar size="xl" src="/profile.jpg" />
@@ -91,7 +91,7 @@ export default function Home() {
             {"I'm "}most interested in solving large-scale enterprise problems
             in logistics, finance, and climate tech. Currently{" "}
             <Text as="span" fontWeight="semibold">
-              seeking summer-fall 2023 internship opportunities. 
+              seeking summer and fall 2023 internship opportunities. 
             </Text>
           </Text>
         </Flex>
