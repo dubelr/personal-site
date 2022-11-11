@@ -38,11 +38,11 @@ export default function Home() {
     {
       text: "bobby-dubel",
       icon: GrGithub,
-      path: "https://github.com/bobby-dubel",
+      path: "https://github.com/dubelr",
       color: "gray",
     },
   ];
-  let personalSiteProjectURL = "https://github.com/bobby-dubel/personal-site"
+  let personalSiteProjectURL = "https://github.com/dubelr/personal-site"
   return (
     <div>
       <Head>
