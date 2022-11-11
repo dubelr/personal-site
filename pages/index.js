@@ -30,13 +30,13 @@ export default function Home() {
       color: "green",
     },
     {
-      text: "robert-dubel",
+      text: "LinkedIn",
       icon: GrLinkedinOption,
       path: "https://www.linkedin.com/in/robert-dubel/",
       color: "linkedin",
     },
     {
-      text: "dubelr",
+      text: "GitHub",
       icon: GrGithub,
       path: "https://github.com/dubelr",
       color: "gray",
