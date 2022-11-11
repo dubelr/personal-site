@@ -15,7 +15,7 @@ import Head from "next/head";
 import { HiDocumentText, HiMail } from "react-icons/hi";
 import { GrLinkedinOption, GrGithub } from "react-icons/gr";
 export default function Home() {
-  let name = "Robert Dubel";
+  let name = "Rob Dubel";
   let buttons = [
     {
       text: "Resume",
@@ -36,7 +36,7 @@ export default function Home() {
       color: "linkedin",
     },
     {
-      text: "bobby-dubel",
+      text: "dubelr",
       icon: GrGithub,
       path: "https://github.com/dubelr",
       color: "gray",
@@ -47,7 +47,7 @@ export default function Home() {
     <div>
       <Head>
         <title>{name}</title>
-        <meta name="description" content="Robert Dubel's personal website" />
+        <meta name="description" content="Rob Dubel's personal website" />
         <link rel="icon" href="/favicon.png" />
       </Head>
       <Flex align="center" direction="column" h="100vh" w="100vw" py="5vh" px="25px">
