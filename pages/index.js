@@ -21,7 +21,7 @@ export default function Home() {
       text: "Resume",
       icon: HiDocumentText,
       path: "resume.pdf",
-      color: "orange",
+      color: "blue",
     },
     {
       text: "Email",
@@ -30,16 +30,16 @@ export default function Home() {
       color: "green",
     },
     {
-      text: "@robert-dubel",
+      text: "robert-dubel",
       icon: GrLinkedinOption,
       path: "https://www.linkedin.com/in/robert-dubel/",
       color: "linkedin",
     },
     {
-      text: "@bobby-dubel",
+      text: "bobby-dubel",
       icon: GrGithub,
       path: "https://github.com/bobby-dubel",
-      color: "teal",
+      color: "gray",
     },
   ];
   let personalSiteProjectURL = "https://github.com/bobby-dubel/personal-site"
@@ -50,29 +50,28 @@ export default function Home() {
         <meta name="description" content="Robert Dubel's personal website" />
         <link rel="icon" href="/favicon.png" />
       </Head>
-      <Center py="75px" px="25px">
-        <Flex w="620px" direction="column">
+      <Flex align="center" direction="column" h="100vh" w="100vw" py="75px" px="25px">
+        <Flex maxW="555px" direction="column">
           <HStack spacing={4}>
             <Avatar size="xl" src="/profile.jpg" />
             <VStack align="left">
               <Heading size="lg">{name}</Heading>
               <Text>
-                Software Engineer, Outdoors Club President @ Northeastern
-                University. He/Him
+                Software Engineer, Student, Outdoors Club President at Northeastern. He/Him
               </Text>
             </VStack>
           </HStack>
           <Wrap spacing={2} py={5}>
             {buttons.map((button) => (
               <Button
+                w="max-content"
                 variant="outline"
-                m="sm"
                 color="black"
                 _hover={{
                   bg: button.color + ".50",
                   color: button.color + ".700",
                   boxShadow: "md",
-                  borderColor: button.color + ".200",
+                  borderColor: button.color + ".500",
                   transition: "100ms linear"
                 }}
                 key={button.text}
@@ -85,26 +84,25 @@ export default function Home() {
           </Wrap>
           <Text align="left">
             Hi! {"I'm"} Robert, a full-time engineer co-op at
-            Plainspoken Digital (politics lead-generation startup) and a Junior at
+            Plainspoken Digital (political discourse analysis startup) and a Junior at
             Northeastern University.
           </Text>
           <Text as="span" align="left" pt={3}>
             {"I'm "}most interested in solving large-scale enterprise problems
             in logistics, finance, and climate tech. Currently{" "}
             <Text as="span" fontWeight="semibold">
-              seeking summer-fall 2023 internship opportunities.
+              seeking summer-fall 2023 internship opportunities. 
             </Text>
           </Text>
         </Flex>
-      </Center>
-      <footer px="25px">
-        <Center>
-          <Text color="gray.300">
-            Created with Next.js, Chakra UI; deployed with Vercel. View project on{" "}
+        <Spacer />
+        <Flex maxW="555px" direction="column">
+          <Text mt="75px" as="span" align="center" color="gray.400">
+            Created with Next.js, Chakra UI, Vercel. View source on{" "}
             <a href={personalSiteProjectURL}><b>GitHub</b></a>.
           </Text>
-        </Center>
-      </footer>
+        </Flex>
+      </Flex>
     </div>
   );
 }
