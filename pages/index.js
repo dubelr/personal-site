@@ -1,4 +1,5 @@
 import {
+  Box,
   Avatar,
   HStack,
   VStack,
@@ -14,6 +15,7 @@ import {
 import Head from "next/head";
 import { HiDocumentText, HiMail } from "react-icons/hi";
 import { GrLinkedinOption, GrGithub } from "react-icons/gr";
+import Image from "next/image";
 export default function Home() {
   let name = "Rob Dubel";
   let buttons = [
@@ -52,8 +54,9 @@ export default function Home() {
       </Head>
       <Flex align="center" direction="column" h="100vh" w="100vw" py="5vh" px="25px">
         <Flex maxW="555px" direction="column">
-          <HStack spacing={4}>
-            <Avatar size="xl" src="/profile.jpg" />
+          <HStack spacing={5}>
+            {/* <Avatar size="xl" src="/profile.jpg" /> */}
+            <Image width='95' height='95' src="/profile.jpg" alt="profile img" style={{borderRadius:"50%"}}/>
             <VStack align="left">
               <Heading size="lg">{name}</Heading>
               <Text>
