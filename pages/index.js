@@ -59,7 +59,6 @@ export default function Home() {
         "loader ",
       ].includes(prop),
   });
-
   return (
     <div>
       <Head>
