@@ -134,7 +134,7 @@ export default function Home() {
           </Text>
           <Text as="span" align="left" pt={3}>
             {"I'm "}most interested in solving large-scale enterprise problems
-            in logistics, finance, and climate tech. Currently{" "}
+            in transportation, logistics, and climate tech. Currently{" "}
             <Text as="span" fontWeight="semibold">
               seeking summer and fall 2023 internship opportunities.
             </Text>
