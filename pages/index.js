@@ -29,7 +29,6 @@ export default function Home() {
       icon: HiMail,
       path: "mailto:dubel.r@northeastern.edu",
       color: "green",
-      label: "mailto: dubel.r@northeastern.edu",
     },
     {
       text: "LinkedIn",
@@ -46,7 +45,7 @@ export default function Home() {
   ];
   let personalSiteProjectURL = "https://github.com/bobby-dubel/personal-site";
   const ChakraImg = chakra(Image, {
-    baseStyle: { maxH: 120, maxW: 120 },
+    baseStyle: { maxH: 100, maxW: 100 },
     shouldForwardProp: (prop) =>
       [
         "width",
@@ -79,21 +78,20 @@ export default function Home() {
             <ChakraImg
               src="/profile.jpg"
               alt="descriptive"
-              width="90"
-              height="90"
+              width="65"
+              height="65"
               borderRadius="50%"
             />
             <VStack align="left">
               <Heading size="lg">{name}</Heading>
               <Text>
-                Software Engineer, Student, Outdoors Club President at
-                Northeastern. He/Him
+                Software Engineer, Student. He/Him
               </Text>
             </VStack>
           </HStack>
           <Wrap spacing={3} py={5} overflow="visible">
             {buttons.map((button) => (
-              <Tooltip label={button.label} key={button.label}>
+              <Tooltip label={button.label} key={button.text}>
               <Button
                 w="max-content"
                 variant="outline"
@@ -143,7 +141,7 @@ export default function Home() {
         <Spacer />
         <Flex maxW="555px" direction="column">
           <Text mt="75px" as="span" align="center" color="gray.400">
-            Created with Next.js, Chakra UI, Vercel. View source on{" "}
+            I built this with Next.js, Chakra UI, Vercel. View source on{" "}
             <a href={personalSiteProjectURL}>
               <b>GitHub</b>
             </a>
