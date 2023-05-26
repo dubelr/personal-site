@@ -16,7 +16,7 @@ import { HiDocumentText, HiMail } from "react-icons/hi";
 import { GrLinkedinOption, GrGithub } from "react-icons/gr";
 
 export default function Home() {
-  let name = "Rob Dubel";
+  let name = "Bobby Dubel";
   let buttons = [
     {
       text: "Resume",
@@ -62,7 +62,7 @@ export default function Home() {
     <div>
       <Head>
         <title>{name}</title>
-        <meta name="description" content="Rob Dubel's personal website" />
+        <meta name="description" content="Bobby Dubel's personal website" />
         <link rel="icon" href="/favicon.png" />
       </Head>
       <Flex
@@ -126,9 +126,7 @@ export default function Home() {
             ))}
           </Wrap>
           <Text align="left">
-            Hi! {"I'm"} Rob, a full-time engineer co-op at Plainspoken
-            Digital (political discourse analysis startup) and a Junior at
-            Northeastern University.
+            {"Hi! I'm Bobby, a recent grad from Northeastern Unviersity with full-time software engineering experience at Ray, a political analytics startup. I'm interested in solving challenging problems in tech, finance, and climate solutions."}
           </Text>
           <Text as="span" align="left" pt={3}>
             {"I'm "}most interested in solving large-scale enterprise problems
