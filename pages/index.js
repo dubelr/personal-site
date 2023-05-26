@@ -129,17 +129,16 @@ export default function Home() {
             {"Hi! I'm Bobby, a recent grad from Northeastern Unviersity with full-time software engineering experience at Ray, a political analytics startup. I'm interested in solving challenging problems in tech, finance, and climate solutions."}
           </Text>
           <Text as="span" align="left" pt={3}>
-            {"I'm "}most interested in solving large-scale enterprise problems
-            in transportation, logistics, and climate tech. Currently{" "}
+            {"Currently "}
             <Text as="span" fontWeight="semibold">
-              seeking summer and fall 2023 internship opportunities.
+              seeking summer and fall 2023 internship and full-time opportunities.
             </Text>
           </Text>
         </Flex>
         <Spacer />
         <Flex maxW="555px" direction="column">
           <Text mt="75px" as="span" align="center" color="gray.400">
-            I built this with Next.js, Chakra UI, Vercel. View source on{" "}
+            Built with Next.js, Chakra UI, Vercel. View source on{" "}
             <a href={personalSiteProjectURL}>
               <b>GitHub</b>
             </a>
