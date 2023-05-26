@@ -128,11 +128,8 @@ export default function Home() {
           <Text align="left">
             {"Hi! I'm Bobby, a recent grad from Northeastern Unviersity with full-time software engineering experience at Ray, a political analytics startup. I'm interested in solving challenging problems in tech, finance, and climate solutions."}
           </Text>
-          <Text as="span" align="left" pt={3}>
-            {"Currently "}
-            <Text as="span" fontWeight="semibold">
-              seeking summer and fall 2023 internship and full-time opportunities.
-            </Text>
+          <Text as="span" align="left" pt={3} fontWeight="semibold">
+            Currently seeking summer 2023 internships with full-time potential.
           </Text>
         </Flex>
         <Spacer />
